@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 7 test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  </head>
+  <body>
+    <div class="get_data">
+      <p class="top_text" id="my_top_text">MY Public IP Address:</p>
+      <button type="submit" class="get_data_btn" id="get_data_btn">Get Data</button>
+    </div>
+
+    <div class="fetched_data" id="fetched_data">
+      <p class="top_text" id="fetched_data_ip">MY Public IP Address:</p>
+      <div class="geo_info">
+        <div class="grid_item">
+          <p class="geo_details" id="lat">Lat:</p>
+        </div>
+        <div class="grid_item">
+          <p class="geo_details" id="city">City:</p>
+        </div>
+        <div class="grid_item">
+          <p class="geo_details" id="org">Organisation:</p>
+        </div>
+        <div class="grid_item">
+          <p class="geo_details" id="long">Long:</p>
+        </div>
+        <div class="grid_item">
+          <p class="geo_details" id="region">Region:</p>
+        </div>
+        <div class="grid_item">
+          <p class="geo_details" id="hostname">Hostname: NA</p>
+        </div>
+      </div>
+
+      <div class="google_map">
+        <iframe id="my_map" src="" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+
+      <div class="other_data">
+        <p class="other_data_text" id="timezone">Time Zone:</p>
+        <p class="other_data_text" id="date_and_time">Date and Time:</p>
+        <p class="other_data_text" id="pincode">Pincode:</p>
+        <p class="other_data_text" id="message">Message: Number of pincode(s) found:</p>
+      </div>
+
+      <div class="filter">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Filter" class="filter_box" />
+      </div>
+    </div>
+    <div class="poDiv" id="po-div">
+      <div id="post-offices" class="row"></div>
+    </div>
+  </body>
+</html>
